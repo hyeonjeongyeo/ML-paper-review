@@ -72,9 +72,9 @@ $$
 
 $$
 \frac{\partial \mathcal{L}_{content}}{\partial \mathcal{F}_{ij}^{l}} = 
-\left\{
+\left\lbrace
 \begin{aligned} 
-& (F^l - P^l)_{ij} & {if} \; \mathcal{F}_{ij}^{l} > 0 \\ 
+& (F^l - P^l)_{ij} & if \ \ \mathcal{F}_{ij}^{l} > 0 \\ 
 & 0 & otherwise 
 \end{aligned}\right.
 $$
@@ -117,9 +117,9 @@ $$
 
 $$
 \frac{\partial E_l}{\partial F_{ij}^l} = 
-\left\{
+\left\lbrace
 \begin{aligned} 
-& \frac{1}{N_l^2 M_l^2} ((F^l)^T (G^l - P^l))_{ji} & if \;\mathcal{F}_{ij}^{l} > 0 \\
+& \frac{1}{N_l^2 M_l^2} ((F^l)^T (G^l - P^l))_{ji} & if \ \ \mathcal{F}_{ij}^{l} > 0 \\
 & 0 & otherwise
 \end{aligned}\right.
 $$
@@ -139,10 +139,10 @@ $$
 $\alpha$ 와 $\beta$ 는 각각 내용과 스타일 재구성의 가중치이다. 스타일 전이를 위해 형성된 이미지 $x$ 에 대한 손실의 미분값을 최적화에 사용할 수 있다 :
 
 $$
-\frac{\partial \mathcal{L}_{total} {(p, a, x)}}{\partial F_{ij}^l} = 
-\left\{
+\frac{\partial \mathcal{L}_{total}^{(p, a, x)}}{\partial F_{ij}^l} = 
+\left\lbrace
 \begin{aligned} 
-& \alpha (F^l - P^l)_{ij} + \frac{\beta}{N_l^2 M_l^2} ((F^l)^T (G^l - P^l))_{ji} & if \; \mathcal{F}_{ij}^{l} > 0 \\
+& \alpha (F^l - P^l)_{ij} + \frac{\beta}{N_l^2 M_l^2} ((F^l)^T (G^l - P^l))_{ji} & if \ \ \mathcal{F}_{ij}^{l} > 0 \\
 & 0 & ohterwise
 \end{aligned}\right.
 $$
